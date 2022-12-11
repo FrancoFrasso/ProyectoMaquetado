@@ -1,0 +1,48 @@
+{{#if conocido}} 
+  {{nombre}}
+{{/if }}
+
+{{#unless conocido}}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <title>LOGIN | Maquetado de Ambos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/LOGUEAR USUARIO.CSS">
+    <link rel="icon" href="LOGO-modified.png">
+
+
+</head>
+<section class="registro">
+    <h3>LOGUEAR USUARIO </h3>
+    <div>
+
+        <form action="/ingresar" method="post">
+            <input class="controls" type="text" name="nombre" id="mail" placeholder="Ingrese su E-Mail">
+            <input class="controls" type="password" name="contraseña" id="contraseña"
+                placeholder="Ingrese su Contraseña">
+            <input class="registrarse" type="submit" value="Iniciar Sesion">
+             </form>
+    </div>
+
+
+
+   
+
+    <p> ¿Olvidaste la Contraseña? <a class="terminos" href="">Recuperar Contraseña</a></p>
+    <p>¿No tienes Usuario? <a href="/registrarusuario" target="_blank">Registrarse</a></p>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+{{/unless}}
